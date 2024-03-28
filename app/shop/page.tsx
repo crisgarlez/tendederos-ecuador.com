@@ -1,6 +1,20 @@
 import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { genPageMetadata } from 'app/seo'
+import Image from 'next/image'
+import myImage from '../../public/static/images/tendederos/IMG_0336.jpeg'
+import myImage2 from '../../public/static/images/tendederos/IMG_0337.jpeg'
+import myImage3 from '../../public/static/images/tendederos/IMG_0349.jpeg'
+
+import myImage4 from '../../public/static/images/tendederos/IMG_0344.jpeg'
+import myImage5 from '../../public/static/images/tendederos/IMG_0345.jpeg'
+import myImage6 from '../../public/static/images/tendederos/IMG_0341.jpeg'
+import myImage7 from '../../public/static/images/tendederos/IMG_0346.jpeg'
+
+import myImage8 from '../../public/static/images/tendederos/IMG_0349.jpeg'
+import myImage9 from '../../public/static/images/tendederos/IMG_0340.jpeg'
+import myImage10 from '../../public/static/images/tendederos/IMG_0342.jpeg'
+import myImage11 from '../../public/static/images/tendederos/IMG_0343.jpeg'
 
 // import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
@@ -16,22 +30,19 @@ const product = {
   images: [
     {
       id: 1,
-      imageSrc:
-        'https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80',
+      imageSrc: myImage,
       imageAlt: "Back of women's Basic Tee in black.",
       primary: true,
     },
     {
       id: 2,
-      imageSrc:
-        'https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80',
+      imageSrc: myImage2,
       imageAlt: "Side profile of women's Basic Tee in black.",
       primary: false,
     },
     {
       id: 3,
-      imageSrc:
-        'https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80',
+      imageSrc: myImage3,
       imageAlt: "Front of women's Basic Tee in black.",
       primary: false,
     },
@@ -80,26 +91,26 @@ const features2 = [
   {
     name: 'Perfiles de acero',
     description: 'Today, Next, and Someday cards allow you to defer your dreams into the future.',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-01.jpg',
+    imageSrc: myImage4,
     imageAlt: 'Green cardstock box containing white, beige, and brown cards.',
   },
   {
     name: 'Cordel de acero',
     description:
       'Each refill pack contains plenty of cards to last you a month of procrastination.',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-02.jpg',
+    imageSrc: myImage5,
     imageAlt: 'Green cardstock box open with 50 cards inside.',
   },
   {
     name: 'Seguros de cordel',
     description: 'Flip a card over to doodle during meetings when you should be listening.',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-03.jpg',
+    imageSrc: myImage6,
     imageAlt: 'Detail of white today card, beige next card, and brown someday card with dot grid.',
   },
   {
     name: 'Tornillos para instalar',
     description: 'Subscribe and save on routine refill packs to keep you productive all year long.',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-04.jpg',
+    imageSrc: myImage7,
     imageAlt: 'Stack of three green cardstock boxes with 3 hole cutouts showing cards inside.',
   },
 ]
@@ -130,7 +141,7 @@ export default function Projects() {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 lg:gap-8">
                 {product.images.map((image) => (
-                  <img
+                  <Image
                     key={image.id}
                     src={image.imageSrc}
                     alt={image.imageAlt}
@@ -227,23 +238,23 @@ export default function Projects() {
           </dl>
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+          <Image
+            src={myImage8}
             alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
             className="rounded-lg bg-gray-100"
           />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+          <Image
+            src={myImage9}
             alt="Top down view of walnut card tray with embedded magnets and card groove."
             className="rounded-lg bg-gray-100"
           />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+          <Image
+            src={myImage10}
             alt="Side of walnut card tray with card groove and recessed card area."
             className="rounded-lg bg-gray-100"
           />
-          <img
-            src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+          <Image
+            src={myImage11}
             alt="Walnut card tray filled with cards and card angled in dedicated groove."
             className="rounded-lg bg-gray-100"
           />
@@ -269,7 +280,7 @@ export default function Projects() {
                 <p className="mt-2 text-sm text-gray-500">{feature.description}</p>
               </div>
               <div className="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100">
-                <img
+                <Image
                   src={feature.imageSrc}
                   alt={feature.imageAlt}
                   className="object-cover object-center"

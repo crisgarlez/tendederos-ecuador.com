@@ -3,6 +3,10 @@ import { allBlogs } from 'contentlayer/generated'
 import Main from './Main'
 import { InboxIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
 import Link from '@/components/Link'
+import Image from 'next/image'
+import myImage from '../public/static/images/tendederos/IMG_0335.jpeg'
+import myImage2 from '../public/static/images/tendederos/IMG_0351.jpeg'
+import myImage3 from '../public/static/images/tendederos/medium-shot-man-with-helmet-drill.jpg'
 
 const features = [
   {
@@ -62,8 +66,8 @@ export default async function Page() {
                 </Link>
               </div>
             </div>
-            <img
-              src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
+            <Image
+              src={myImage}
               alt=""
               className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-10 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-10"
             />
@@ -115,11 +119,7 @@ export default async function Page() {
 
       <div className="relative bg-gray-900">
         <div className="relative h-80 overflow-hidden bg-indigo-600 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
-          <img
-            className="h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
-            alt=""
-          />
+          <Image className="h-full w-full object-cover" src={myImage2} alt="" />
           <svg
             viewBox="0 0 926 676"
             aria-hidden="true"
@@ -195,8 +195,8 @@ export default async function Page() {
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                <img
-                  src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                <Image
+                  src={myImage3}
                   alt=""
                   className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                 />
