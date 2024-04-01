@@ -25,7 +25,7 @@ export const metadata = genPageMetadata({ title: 'Tienda' })
 
 const product = {
   name: 'Tendedero plegable de acero',
-  price: '$200',
+  price: '$120',
   href: '#',
   images: [
     {
