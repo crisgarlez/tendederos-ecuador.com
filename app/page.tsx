@@ -1,12 +1,12 @@
 import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
 import { allBlogs } from 'contentlayer/generated'
 import Main from './Main'
-import { InboxIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
+import { CheckBadgeIcon, HandThumbUpIcon, SparklesIcon } from '@heroicons/react/24/outline'
 import Link from '@/components/Link'
 import Image from 'next/image'
-import myImage from '../public/static/images/tendederos/IMG_0335.jpeg'
+import HeroImage from '../public/static/images/tendederos/IMG_0335.jpeg'
 import myImage2 from '../public/static/images/tendederos/IMG_0351.jpeg'
-import myImage3 from '../public/static/images/tendederos/medium-shot-man-with-helmet-drill.jpg'
+import DrillImage from '../public/static/images/tendederos/drill.jpg'
 
 const features = [
   {
@@ -14,20 +14,20 @@ const features = [
     description:
       'Su diseño intuitivo te permite abrirlo y cerrarlo en segundos, sin necesidad de herramientas ni esfuerzo físico.',
     href: '#',
-    icon: InboxIcon,
+    icon: HandThumbUpIcon,
   },
   {
     name: 'Resistencia y durabilidad',
     description: 'Soporta cargas pesadas sin deformarse, ideal para la ropa de toda la familia.',
     href: '#',
-    icon: UsersIcon,
+    icon: CheckBadgeIcon,
   },
   {
     name: 'Tu ropa libre de óxido',
     description:
       'Tus prendas estarán seguras y libres de manchas antiestéticas provocadas por el óxido en los cordeles.',
     href: '#',
-    icon: TrashIcon,
+    icon: SparklesIcon,
   },
 ]
 
@@ -56,18 +56,18 @@ export default async function Page() {
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <Link
-                  href={'/'}
+                  href={'/shop'}
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Comprar
                 </Link>
-                <Link href={'/'} className="text-sm font-semibold leading-6 text-gray-900">
+                <Link href={'/faq'} className="text-sm font-semibold leading-6 text-gray-900">
                   Conoce más <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
             <Image
-              src={myImage}
+              src={HeroImage}
               alt=""
               className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-10 lg:mt-10 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-10"
             />
@@ -101,14 +101,6 @@ export default async function Page() {
                   </dt>
                   <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                     <p className="flex-auto">{feature.description}</p>
-                    <p className="mt-6">
-                      <a
-                        href={feature.href}
-                        className="text-sm font-semibold leading-6 text-indigo-600"
-                      >
-                        Conoce más <span aria-hidden="true">→</span>
-                      </a>
-                    </p>
                   </dd>
                 </div>
               ))}
@@ -160,7 +152,7 @@ export default async function Page() {
             </p>
             <div className="mt-8">
               <Link
-                href={'/'}
+                href={'/shop'}
                 className="inline-flex rounded-md bg-white/10 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white/20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Conoce los detalles del producto
@@ -186,7 +178,7 @@ export default async function Page() {
               </p>
               <div className="mt-10 flex">
                 <Link
-                  href={'/'}
+                  href={'/faq'}
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
                   Conoce más <span aria-hidden="true">&rarr;</span>
@@ -196,7 +188,7 @@ export default async function Page() {
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
                 <Image
-                  src={myImage3}
+                  src={DrillImage}
                   alt=""
                   className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
                 />
