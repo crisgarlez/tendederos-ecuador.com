@@ -1,14 +1,14 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'Tendederos Ecuador',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
-  theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/logo.png',
+  author: 'Tendederos Ecuador',
+  headerTitle: 'Tendederos Ecuador',
+  description: 'Tendederos plegables de alta calidad',
+  language: 'es-ec',
+  theme: 'light', // system, dark or light
+  siteUrl: 'https://tendederos-ecuador-com.vercel.app',
+  siteRepo: 'https://github.com/crisgarlez/tendederos-ecuador.com',
+  siteLogo: '/static/images/logo.png', // TODO: Cambiar el logo
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',
@@ -19,7 +19,7 @@ const siteMetadata = {
   linkedin: 'https://www.linkedin.com',
   threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com',
-  locale: 'en-US',
+  locale: 'es-EC',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.

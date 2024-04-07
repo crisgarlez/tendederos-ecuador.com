@@ -19,7 +19,12 @@ import myImage11 from '../../public/static/images/tendederos/IMG_0343.jpeg'
 // import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 // import { RadioGroup } from '@headlessui/react'
-import { CurrencyDollarIcon, GlobeAmericasIcon } from '@heroicons/react/24/outline'
+import {
+  CurrencyDollarIcon,
+  GlobeAmericasIcon,
+  WrenchScrewdriverIcon,
+  TruckIcon,
+} from '@heroicons/react/24/outline'
 
 export const metadata = genPageMetadata({ title: 'Tienda' })
 
@@ -61,14 +66,14 @@ const product = {
 
 const policies = [
   {
-    name: 'Solicita envío',
-    icon: GlobeAmericasIcon,
-    description: 'Get your order in 2 years',
+    name: 'Envío',
+    icon: TruckIcon,
+    description: 'Solicítalo por un valor adicional',
   },
   {
-    name: 'Solicita instalación',
-    icon: CurrencyDollarIcon,
-    description: "Don't look at other tees",
+    name: 'Instalación',
+    icon: WrenchScrewdriverIcon,
+    description: 'Solicítala por un valor adicional',
   },
 ]
 

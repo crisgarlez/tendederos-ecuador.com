@@ -67,11 +67,12 @@ const Header = () => {
         <div className="flex lg:flex-1">
           <Link href={'/'} className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
+            {/* <img
               className="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               alt=""
-            />
+            /> */}
+            <Logo className="h-8 w-auto" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -103,11 +104,12 @@ const Header = () => {
           <div className="flex items-center justify-between">
             <Link href={'/'} className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
+              {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
-              />
+              /> */}
+              <Logo className="h-8 w-auto" />
             </Link>
             <button
               type="button"
